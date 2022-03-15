@@ -27,3 +27,36 @@ int printChar(va_list list)
 int x = va_arg(list, int);
 return (_putchar(x));
 }
+
+/**
+* print_rot13 - print a string how rot13
+* @arg: args passed
+* Return: str
+*/
+int print_rot13(va_list list)
+{
+	char *str;
+	int i, j;
+	char ch1[] = "ABCDEFGHIJKLMabcdefghijklmNOPQRSTUVWXYZnopqrstuvwxyz";
+	char ch2[] = "NOPQRSTUVWXYZnopqrstuvwxyzABCDEFGHIJKLMabcdefghijklm";
+
+	str = va_arg(list, char *);
+	if (str == NULL)
+	{
+		str = "(ahyy)";
+	}
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		for (j = 0; j <= 52; j++)
+		{
+			if (str[i] == ch1[j])
+			{
+				_putchar(ch2[j]);
+				break;
+			}
+		}
+		if (j == 53)
+		_putchar(str[i]);
+	}
+	return (i);
+}

@@ -63,7 +63,8 @@ typedate types[] = {
 {'d', printDecimal},
 {'b', printBinary},
 {'o', printOctal},
-{'u', printUnsigned}
+{'u', printUnsigned},
+{'R', print_rot13}
 };
 va_list list;
 int count = -1;
