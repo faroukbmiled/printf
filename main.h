@@ -34,6 +34,4 @@ int printUnsignedDigit(unsigned int num, int *count);
 int printOctal(va_list list);
 int printDigitOctal(unsigned int num, int *count);
 char *_Buffer(int size);
-int print_rot13(va_list list);
-int print_rev(va_list list);
 #endif
