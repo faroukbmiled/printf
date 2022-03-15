@@ -62,7 +62,7 @@ return (i);
 
 /**
  * print_rev - prints a string in reverse
- * @arg: arg
+ * @list: arg
  * Return: length
  */
 int print_rev(va_list list)
