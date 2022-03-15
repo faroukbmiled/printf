@@ -65,11 +65,11 @@ return (i);
  * @arg: arg
  * Return: length
  */
-int print_rev(va_list arg)
+int print_rev(va_list list)
 {
 char *str;
 int i, count = 0, len;
-str = va_arg(arg, char*);
+str = va_arg(list, char*);
 if (str == NULL)
 str = "(llun(";
 while (str[i] != '\0')
