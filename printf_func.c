@@ -57,13 +57,13 @@ while (format && format[i])
 int _printf(const char *format, ...)
 {
 typedate types[] = {
-	{'s', printString}, 
-	{'c', printChar}, 
-	{'i', printInteger},
-	{'d', printDecimal}, 
-	{'b', printBinary}, 
-	{'o', printOctal},
-	{'u', printUnsigned}
+{'s', printString},
+{'c', printChar},
+{'i', printInteger},
+{'d', printDecimal},
+{'b', printBinary},
+{'o', printOctal},
+{'u', printUnsigned}
 };
 va_list list;
 int count = -1;

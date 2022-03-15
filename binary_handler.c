@@ -8,10 +8,8 @@
 int printBinary(va_list list)
 {
 unsigned int i, count, num, bin, p[32];
-
 i = 0, count = 0;
 num = va_arg(list, int);
-
 if (num < 1)
 {
 _putchar(48);
